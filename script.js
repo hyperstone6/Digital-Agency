@@ -7,6 +7,8 @@ const slides = document.querySelectorAll(".carousel-slide");
 const toggleBtn = document.querySelector(".toggle-btn");
 const navRibbon = document.querySelector(".nav-ribbon");
 
+const navBtnList = document.querySelector('.nav-btn-list')
+
 let direction;
 
 nextBtn.addEventListener("click", (e) => {
@@ -51,3 +53,13 @@ toggleBtn.addEventListener("click", (e) => {
     navRibbon.children[2].classList.add('nav-btns', 'default-padding')
   } 
 });
+
+window.addEventListener('click', e => {
+  if(!toggleBtn.contains(e.target)) {
+    if(navRibbon.children[2].classList[0] === 'nav-btn-list') {
+      navRibbon.children[2].classList.remove('nav-btn-list')
+      navRibbon.children[2].classList.add('nav-btns', 'default-padding')
+    }
+  }
+  return
+})
