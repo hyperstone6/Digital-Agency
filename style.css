@@ -725,4 +725,15 @@ html {
     .top-mid-p {
         max-width: 90%;
     }
+
+    .mid-carousel {
+        position: relative;
+    }
+
+    .carousel-btns {
+        position: absolute;
+        left: 50%;
+        top: 57rem;
+        transform: translateX(-30%);
+    } 
 }
