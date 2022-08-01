@@ -707,6 +707,10 @@ html {
         padding: 2vw;
     }
 
+    .nav-ribbon {
+        margin-top: 0;
+    }
+    
     .contacts-container,
     .main-image,
     .footer {
