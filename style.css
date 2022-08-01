@@ -162,7 +162,7 @@ html {
     min-width: 30rem;
 }
 
-.top-mid h1 {
+.top-mid h2 {
     margin: var(--margin-1) auto 0;
     max-width: 40%;
     text-align: center;
@@ -183,7 +183,7 @@ html {
     margin-bottom: var(--margin-1);
 }
 
-.top-mid-group-1 h2 {
+.top-mid-group-1 h3 {
     font-size: clamp(1.5rem, 1.5vw, 2.5rem);
     padding-bottom: 1rem;
 }
@@ -210,7 +210,7 @@ html {
     top: -20%;
 }
 
-.top-mid-group-2 h2 {
+.top-mid-group-2 h3 {
     margin-bottom: 1em;
 }
 
@@ -713,8 +713,18 @@ html {
         display: none;
     }
 
-    .top-mid-group-1 {
+    .top-mid-group-1,
+    .top-mid-group-2 {
         max-width: 100%;
+    } 
+
+    .top-mid h2{
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+
+    .top-mid-thumb {
+        width: 90%;
     }
 
     .office-1 {
