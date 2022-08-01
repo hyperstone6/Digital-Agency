@@ -55,6 +55,7 @@ toggleBtn.addEventListener("click", (e) => {
 });
 
 window.addEventListener('click', e => {
+  console.log(e.target)
   if(!toggleBtn.contains(e.target)) {
     if(navRibbon.children[2].classList[0] === 'nav-btn-list') {
       navRibbon.children[2].classList.remove('nav-btn-list')
